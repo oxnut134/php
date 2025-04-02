@@ -1,0 +1,35 @@
+# Query: tab
+# ContextLines: 1
+
+8 件の結果 - 1 ファイル
+
+css\sanitize.css:
+   29  * 2. Change the line height in all browsers (opinionated).
+   30: * 3. Use a 4-space tab width in all browsers (opinionated).
+   31  * 4. Remove the grey highlight on links in iOS (opinionated).
+
+   39      /* 6 */
+   40:     -moz-tab-size: 4;
+   41      /* 3 */
+   42:     tab-size: 3;
+   43      /* 3 */
+
+  263  
+  264: /* Tabular data
+  265  * ========================================================================== */
+
+  270  
+  271: table {
+  272      border-collapse: collapse;
+
+  336  legend {
+  337:     display: table;
+  338      /* 1 */
+
+  548  textarea,
+  549: [tabindex] {
+  550      -ms-touch-action: manipulation;
+
+  583  /*
+  584: * Change the cursor on disabled, not-editable, or otherwise
+  585  * inoperable elements in all browsers (opinionated).

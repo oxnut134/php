@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<style>
+  /* ラジオボタンを横並びにする */
+  .button {
+    display: flex;/*inline-block;*/
+    /* 横並びにする */
+    margin-right: 10px;
+    /* ボタン間のスペース */
+  }
+  .space{
+    margin-right:10px;
+  }
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!--<form action="course.php" method="POST">-->
+  <form action="course.php" method="GET">
+    <label>お名前：<input type="text" name="customer"></label>
+    <br />
+    <div class="button">
+      <label class="space">ご希望商品：<input type="radio" name="item" value="Ａセット">Ａセット</label>
+      <br />
+      <label class="space"><input type="radio" name="item" value="Ｂセット">Ｂセット</label>
+      <br />
+      <label><input type="radio" name="item" value="Ｃセット">Ｃセット</label>
+      <br />
+    </div>
+   
+    <!--<label>注文数：
+      <select  name="quantity" style="width:100px;" >
+        <option value="1"> 1</option>
+        <option value="2"> 2</option>
+        <option value="3"> 3</option>
+        <option value="4"> 4</option>
+        <option value="5"> 5</option>
+      </select>
+    </label>-->
+    <label>注文数：<input type="number" name="quantity" min="1" max="100" step="1" value="1" style="width:100px;"></label>
+
+    <br />
+    <label><input type="submit" value="送信する"></label>
+  
+  </body>
+
+</html>
